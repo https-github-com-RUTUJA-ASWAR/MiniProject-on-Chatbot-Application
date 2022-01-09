@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Welcome to GECA</title>
+    <link rel="icon" type="image/png" href="img/geca_Logo_1x1_small.png">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+</head>
+
+
+<body id="home">
+
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat with us!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+<div class="wrapper">
+    <!-- header starts here -->
+    <header id="header" class="">
+        <!-- header -->
+        <div class="header-wrapper">
+            <div class="header-container">
+                <div>
+                    <div class="logo-name">
+                        <div class="logo"><a href="index.html" title=""><img src="img/geca_Logo_1x1_small.png"
+                                                                             alt="logo"></a></div>
+                        <div class="name">
+                            <a href="index.html" title="">
+                                <h5>Government College of Engineering</h5>
+                                <h5 class="primary-color">Aurangabad</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-links">
+                    <a href="#" data-toggle="popover" title="Address"
+                       data-content="Government College Of Engineering
+Railway Station Road,
+Aurangabad
+Maharashtra,
+India - 431005."
+                       data-placement="bottom"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></a>
+
+                    <a href="#" data-toggle="popover" title="Phone No." data-content=" 0240-2366101"
+                       data-placement="bottom"><i class="fa fa-phone fa-lg" aria-hidden="true"></i></a>
+
+                    <a href="#" data-toggle="popover" title="Email" data-content="fees@geca.ac.in"
+                       data-placement="bottom"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="navbar navbar-inverse navbar-custom" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Institute <b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu multi-level">
+                                    <li><a href="about.html">About</a></li>
+                                    <li>Director's Message</a></li>
+                                    
+                                    
+                                    <li>Academic Council</a></li>
+                                    
+                                    
+                                    
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Academics<b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu multi-level">
+                                    <li class="dropdown-submenu">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">B.Tech</a>
+                                        <ul class="dropdown-menu">
+                                           <li>Computer Science & Engineering</a></li>
+                                            <li>Information Technology</a></li>
+<li>Electrical Engineering</a></li>
+<li>Civil Engineering</a></li>
+<li>Mechanical Engineering</a></li>
+<li>Electronics Engineering</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">M.Tech</a>
+                                        <ul class="dropdown-menu">
+                                            <li>Computer Science & Engineering</a></li>
+<li>Information Technology</a></li>
+<li>Electrical Engineering</a></li>
+<li>Civil Engineering</a></li>
+<li>Mechanical Engineering</a></li>
+<li>Electronics Engineering</a></li>
+                                        </ul>
+                                    </li>
+
+</ul>
+</li>
+                                    
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admission <b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu multi-level">
+                                    <li>B.Tech</a></li>
+                                    <li>M.Tech</a></li>
+                                   
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">People <b class="caret"></b></a>
+                                <ul class="dropdown-menu multi-level">
+                                    <li>Faculty</a></li>
+                                    <li>Visiting Faculty</a></li>
+                                    <li>Staff</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu multi-level">
+                                    <li>FAQs</a></li>
+                                    <li>Student's Corner</a></li>
+                                    
+                                    <li>Library</a></li>
+                                    <li>Invited Talks</a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- /header -->
+
+    <!-- carousel -->
+  
+
+
+    <!-- Announcements, Events, News -->
+    <div class="widgets-wrapper">
+        <div class="widgets-container">
+
+            <!-- Edit this section for important announcements.-->
+            <div class="alert alert-warning text-center">
+                Institute invites applications for <a class="alert-link" href="http://pgadmissions.iiitvadodara.ac.in/">MTech
+                and PhD programs - Academic Year 2016-17</a>
+            </div>
+
+            <!-- Announcements -->
+            <div class="col-sm-4" id="announcements">
+                <div class='announcement-content '>
+                    <div class="widgets-title"><h2>Announcements</h2></div>
+                    <ul id="announcement-list">
+                        <li>
+                            For admissions to <b>B.Tech. and M.Tech programs</b> visit:<br><a
+                                href="https://geca.ac.in/home.aspx" target="_blank"> PG-Admission-Portal.</a>
+                        </li>
+                        <li>
+                            For queries related to <b>B.Tech. programs </b>contact us at: &nbsp; &nbsp; <span
+                                style="font-size: 12px; font-weight: bold;color:Black"><a
+                                href="mailto:admissions@iiitvadodara.ac.in">admissions@geca.ac.in</a></span>
+                        </li>
+                        <li>
+                            Government of India Schemes for Students' Welfare <a
+                                href="https://www.vidyalakshmi.co.in/Students/indexPopup" target="_blank">www.vidyalakshmi.co.in </a><a
+                                href="https://www.scholarships.gov.in/main.do" target="_blank">
+                            www.scholarships.gov.in </a>
+                        </li>
+                    </ul>
+                    <div id="announcement-list-pagination">
+                        <a id="announcement-list-previous" href="#">
+                            <span><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+
+                        </a>
+                        <a id="announcement-list-next" href="#">
+                            <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Events -->
+            <div class="col-sm-4" id="events">
+                <div class="events-content">
+                    <div class="widgets-title"><h2>Events</h2></div>
+                    <ul id="events-list">
+                        <li>
+                            <!-- Events -->
+                            <div class="event-container">
+                                <!-- Date -->
+                                <div class="date">
+                                        <span>
+                                            <!-- Day -->
+                                            <div class="day">18</div>
+                                            <!-- Month Short Form (first three letters) -->
+                                            <div class="month">Dec</div>
+                                        </span>
+                                </div>
+                                <!-- Event-Description -->
+                                <div class="event-text">SAT Re-establishment Program</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="event-container">
+                                <!-- Date -->
+                                <div class="date">
+                                            <span>
+                                                <!-- Day -->
+                                                <div class="day">12</div>
+                                                <!-- Month Short Form (first three letters) -->
+                                                <div class="month">Mar</div>
+                                            </span>
+                                </div>
+                                <!-- Event-Description -->
+                                <div class="event-text">Hackathon 2017</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="event-container">
+                                <!-- Date -->
+                                <div class="date">
+                                            <span>
+                                                <!-- Day -->
+                                                <div class="day">5</div>
+                                                <!-- Month Short Form (first three letters) -->
+                                                <div class="month">Nov</div>
+                                            </span>
+                                </div>
+                                <!-- Event-Description -->
+                                <div class="event-text">ICT SPORTS Matches</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="event-container">
+                                <!-- Date -->
+                                <div class="date">
+                                            <span>
+                                                <!-- Day -->
+                                                <div class="day">26</div>
+                                                <!-- Month Short Form (first three letters) -->
+                                                <div class="month">Jan</div>
+                                            </span>
+                                </div>
+                                <!-- Event-Description -->
+                                <div class="event-text">Republic Day</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="event-container">
+                                <!-- Date -->
+                                <div class="date">
+                                            <span>
+                                                <!-- Day -->
+                                                <div class="day">14</div>
+                                                <!-- Month Short Form (first three letters) -->
+                                                <div class="month">Jan</div>
+                                            </span>
+                                </div>
+                                <!-- Event-Description -->
+                                <div class="event-text">Wings</div>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div id="events-list-pagination">
+                        <a id="events-list-previous" href="#">
+                            <span><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+
+                        </a>
+                        <a id="events-list-next" href="#">
+                            <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-4" id="news">
+                <div class='news-content '>
+                    <div class="widgets-title"><h2>News</h2></div>
+                    <ul id="news-list">
+                        <li>
+                            <a href="http://aviaryan.in" target="_blank">Vedang Kulkarni</a> National Award Winner in Flute
+                            
+
+                        </li>
+                    </ul>
+                    <div id="news-list-pagination">
+                        <a id="news-list-previous" href="#">
+                            <span><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+
+                        </a>
+                        <a id="news-list-next" href="#">
+                            <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-wrapper">
+            <span class="logo"><img src="img/geca_logo.png" alt=""></span>
+            <div class="row">
+                <div class="col-sm-4 address">
+                    <strong>Address : </strong>Government College Of Engineering
+Railway Station Road,
+Aurangabad
+Maharashtra,
+India - 431005.
+                </div>
+                <div class="col-sm-4 links">
+                    <div>
+                        <a >News</a>
+                        <i class="seperator"></i>
+                        <a>Announcement</a>
+                        <i class="seperator"></i>
+                        <a >Events</a>
+                    </div>
+                    <div>
+                        <a >Home</a>
+                        <i class="seperator"></i>
+                        <a >RTI</a>
+                        <i class="seperator"></i>
+                        <a >MOU</a>
+                    </div>
+                    <div>
+                        <a >Admission</a>
+                        <i class="seperator"></i>
+                        <a >Student</a>
+                        <i class="seperator"></i>
+                        <a >Faculty</a>
+                    </div>
+                </div>
+                <div class="col-sm-4 footer-social">
+                    <a href="#!"><i class="fa fa-facebook" aria-hidden="true" title="Official Facebook Page"></i></a>
+                    <a href="https://github.com/geca"><i class="fa fa-github" aria-hidden="true"
+                                                          title="Github Group"></i></a>
+                    <a href="#!"><i class="fa fa-linkedin" aria-hidden="true" title="LinkedIn Profile"></i></a>
+                    <a href="#!" title=""><i class="fa fa-twitter" aria-hidden="true"
+                                             title="Official Twitter Account"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery.paginate.min.js "></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/434d359724.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+        $('[data-toggle="popover"]').on('click', function (e) {
+            $('[data-toggle="popover"]').not(this).popover('hide');
+        });
+    });
+</script>
+
+
+
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/scripts/responses.js"></script>
+<script src="static/scripts/chat.js"></script>
+
+
+</html>
